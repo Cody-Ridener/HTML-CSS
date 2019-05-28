@@ -1,4 +1,0 @@
-AddType application/x-httpd-php .html .htm
-AddType application/x-httpd-php7 .html .htm
-AddHandler cgi-script .html .htm
-AddHandler fcgid-script .html .htm
