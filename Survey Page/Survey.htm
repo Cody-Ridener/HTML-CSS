@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Page</title>
+  </head>
+  <body>
+  <form class="" action="survey.php" method="post">
+    First Name: <input type="text" name="firstname"><br>
+    Last Name: <input type="text" name="lastname"><br>
+    <?php
+    $fp = fopen('File.txt', 'w');
+    fwrite($fp, lastname);
+    fclose($fp);
+    ?>
+    <input type="submit" value="Submit the questionaire.">
+  </form>
+  </body>
+</html>
