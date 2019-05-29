@@ -1,8 +1,13 @@
 
+
 <?php
-$fp = fopen('File.txt', 'w');
-fwrite($fp, lastname);
+function writeInfoToFile($first, $last){
+$s = "Name: ".$first." ".$last."\n";
+$fp = fopen($first.".txt", 'w');
+fwrite($fp,$s);
 fclose($fp);
+}
+writeInfoToFile("Cody", "Ridener");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

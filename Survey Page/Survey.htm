@@ -5,15 +5,13 @@
     <title>Survey Page</title>
   </head>
   <body>
-  <form class="" action="survey.php" method="post">
+    <?php include "Survey.php"?>
+    firstname = "Cody"
+    lastname = "Ridener"
+  <form class="" onsubmit="<?php writeInfoToFile(firstname,lastname); ?>">
     First Name: <input type="text" name="firstname"><br>
     Last Name: <input type="text" name="lastname"><br>
-    <?php
-    $fp = fopen('File.txt', 'w');
-    fwrite($fp, lastname);
-    fclose($fp);
-    ?>
-    <input type="submit" value="Submit the questionaire.">
+    <input type="submit" name="submit" value="Submit the Questionaire">
   </form>
   </body>
 </html>
