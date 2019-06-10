@@ -5,7 +5,12 @@
     <title></title>
   </head>
   <body>
-    <script language = "javascript" src ="Survey Page\Scripts\Survey.js" ></script>
-    <button type="button" action = "WriteToFile()" name="button"></button>
+    <script language = "javascript" src ="Scripts\Survey.js" ></script>
+    <script language = 'javascript' src = Scripts\Popup.js></script>
+    <form class="" action="Submission.htm"  onsubmit="WriteToFile()">
+      Last Name: <input type="text" name="lastname"><br>
+      First Name: <input type="text" name="firstname"><br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
