@@ -1,10 +1,9 @@
-function WriteToFile(passForm){
-  alert("submitted")
-  set fso = CreateObject("Scripting.FileSystemObject");
-  set s = fso.CreateTextFile("filename.txt", True);
-  var firstName = document.getElementById('First Name')
-  var lastName = document.getElementById('Last Name')
-  s.writeline("First Name:" + firstName);
-  s.writeline("Last Name: ") + lastName);
+function WriteToFile(){
+  let fso = CreateObject("Scripting.FileSystemObject");
+  let s = fso.CreateTextFile("filename.txt", True);
+  var firstName = document.getElementById('firstname')
+  var lastName = document.getElementById('lastname')
+  s.writeline("First Name: " + "Cody");
+  s.writeline("Last Name:  " + "Ridener");
   s.close();
 }

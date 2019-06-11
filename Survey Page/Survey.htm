@@ -2,18 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Survey Page</title>
+    <title></title>
   </head>
   <body>
-  <form class="" action="survey.php" method="post">
-    First Name: <input type="text" name="firstname"><br>
-    Last Name: <input type="text" name="lastname"><br>
-    <?php
-    $fp = fopen('File.txt', 'w');
-    fwrite($fp, lastname);
-    fclose($fp);
-    ?>
-    <input type="submit" value="Submit the questionaire.">
-  </form>
+    <script language = "javascript" src ="Scripts\Survey.js" ></script>
+    <script language = 'javascript' src = Scripts\Popup.js></script>
+    <form class="" action="Submission.htm"  onsubmit="WriteToFile()">
+      Last Name: <input type="text" name="lastname"><br>
+      First Name: <input type="text" name="firstname"><br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
